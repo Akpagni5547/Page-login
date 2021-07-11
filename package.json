@@ -5,7 +5,7 @@
     "scripts": {
         "nx": "nx",
         "------RUN-ALL-MICRO-FRONTENDS-TOGATHER-CMDs(this will allow us to run all apps togather)------": "",
-        "dev": "concurrently \"root:app:dev\"",
+        "dev": "concurrently \"yarn root:app:dev\"",
         "---------- DEVELOPMENT CMDs(add all microfrontend dev commands here)--------------": "",
         "root:app:dev": "nx serve root --port=3000",
         "---------- PRODUCTION CMDs ----------------------------------------------------------------------------------": "",

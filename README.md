@@ -21,7 +21,9 @@ Once you've installed all of these libraries, run `npm install` or `yarn` from t
 
 ## Development server
 
-Run `yarn dev` to serve all micro frontends apps. Navigate to http://localhost:3000/. The app will automatically reload if you change any of the source files.
+Before, ensure to add your micro frontend script to start the project like: `root:app:dev": "nx serve root --port=3000` in DEVELOPMENT CMDs section in `package.json` file, you have to change the port of your micro-frontend. After that, you have to add this script in `RUN-ALL-MICRO-FRONTENDS-TOGATHER-CMDs` section like this: `\"yarn root:app:dev\"`, to allow your micro frontend to start at the same time as the other micro frontend.
+
+If all is Ok, run `yarn dev` to serve all micro frontends apps. Navigate to http://localhost:3000/. The app will automatically reload if you change any of the source files.
 
 ## Development Process
 
