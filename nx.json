@@ -1,38 +1,20 @@
 {
-  "npmScope": "biomedicale",
-  "affected": {
-    "defaultBase": "master"
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
+    "implicitDependencies": { "package.json": { "dependencies": "*", "devDependencies": "*" }, ".eslintrc": "*" },
+    "affected": { "defaultBase": "master" },
+    "npmScope": "biomedicale",
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/workspace/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"],
+                "accessToken": "ZjNkMDAwYzctMThmOC00MDU0LTk4ZGQtOGQ1ZTA3NjQwOTU2fHJlYWQtd3JpdGU=",
+                "canTrackAnalytics": false,
+                "showUsageWarnings": true
+            }
+        }
     },
-    ".eslintrc.json": "*"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+    "projects": {
+        "root": { "tags": [] },
+        "root-e2e": { "tags": [], "implicitDependencies": ["root"] }
     }
-  },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
-  },
-  "projects": {
-    "root": {
-      "tags": []
-    },
-    "root-e2e": {
-      "tags": [],
-      "implicitDependencies": ["root"]
-    }
-  }
 }
