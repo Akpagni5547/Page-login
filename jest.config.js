@@ -1,5 +1,5 @@
 module.exports = {
-  projects: ['<rootDir>/apps/**'],
+  projects: ['<rootDir>/apps/**', '<rootDir>/apps/login-page', '<rootDir>/libs/antd'],
   testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
   transform: {
     '^.+\\.(ts|js|html)$': 'ts-jest',

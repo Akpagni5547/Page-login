@@ -1,20 +1,43 @@
 {
-    "implicitDependencies": { "package.json": { "dependencies": "*", "devDependencies": "*" }, ".eslintrc": "*" },
-    "affected": { "defaultBase": "master" },
-    "npmScope": "biomedicale",
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "@nrwl/workspace/tasks-runners/default",
-            "options": {
-                "cacheableOperations": ["build", "lint", "test", "e2e"],
-                "accessToken": "ZjNkMDAwYzctMThmOC00MDU0LTk4ZGQtOGQ1ZTA3NjQwOTU2fHJlYWQtd3JpdGU=",
-                "canTrackAnalytics": false,
-                "showUsageWarnings": true
-            }
-        }
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
     },
-    "projects": {
-        "root": { "tags": [] },
-        "root-e2e": { "tags": [], "implicitDependencies": ["root"] }
+    ".eslintrc": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "biomedicale",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ZjNkMDAwYzctMThmOC00MDU0LTk4ZGQtOGQ1ZTA3NjQwOTU2fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
     }
+  },
+  "projects": {
+    "antd": {
+      "tags": []
+    },
+    "login-page": {
+      "tags": []
+    },
+    "login-page-e2e": {
+      "tags": [],
+      "implicitDependencies": ["login-page"]
+    },
+    "root": {
+      "tags": []
+    },
+    "root-e2e": {
+      "tags": [],
+      "implicitDependencies": ["root"]
+    }
+  }
 }

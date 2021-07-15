@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    background-image: url(./fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
